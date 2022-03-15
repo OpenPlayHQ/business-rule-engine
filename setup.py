@@ -2,27 +2,19 @@
 
 from setuptools import setup, find_packages  # type: ignore
 
-# read the contents of your README file
-from os import path
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-
 setup(
-    name='business-rule-engine',
-    version='0.2.0',
-    author='Manfred Kaiser',
-    author_email='manfred.kaiser@logfile.at',
-    description='Python DSL for setting up business intelligence rules',
-    long_description=long_description,
-    long_description_content_type='text/markdown',
-    keywords="business rules engine",
+    name='business_rule_engine',
+    version='0.0.2',
+    author='Devji Chhanga',
+    author_email='devji.chhanga@openplaytech.com',
+    description='Business rules engine with concurrency support based on business-rules-engine library by Manfed Keiser',
+    keywords="b",
     python_requires='>= 3.6',
     packages=find_packages(exclude=("tests",)),  # type: ignore
-    url="https://github.com/manfred-kaiser/business-rule-engine",
+    url="https://github.com/earthedalien/business-rule-engine",
     project_urls={
-        'Source': 'https://github.com/manfred-kaiser/business-rule-engine',
-        'Tracker': 'https://github.com/manfred-kaiser/business-rule-engine/issues',
+        'Source': 'https://github.com/earthedalien/business-rule-engine',
+        'Tracker': 'https://github.com/earthedalien/business-rule-engine/issues',
     },
     classifiers=[
         "Programming Language :: Python :: 3",
