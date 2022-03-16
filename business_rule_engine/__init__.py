@@ -26,6 +26,7 @@ from business_rule_engine.exceptions import (
 PREFETCH_PREFIX = 'get_'
 
 def parse_action_prefetch_params (string):
+    logging.debug("params string: %s for parsing", string)
     parsed_string = string.split('(') #separate method name from params
     method_name = parsed_string[0].strip()
     params = parsed_string[1] 
